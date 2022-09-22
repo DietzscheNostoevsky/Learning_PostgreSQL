@@ -1,0 +1,5 @@
+$ psql -U postgres
+
+# - means superuser 
+
+\l  => list databases
