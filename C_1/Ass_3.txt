@@ -7,3 +7,9 @@ Create a table named automagic with the following fields:
 
     A height field that is a floating point number that is required. 
 
+DROP TABLE automagic ; 
+CREATE TABLE automagic ( 
+  id SERIAL,  
+  name CHAR(32) NOT NULL, 
+  height REAL NOT NULL
+);
