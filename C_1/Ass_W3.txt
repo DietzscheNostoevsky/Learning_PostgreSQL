@@ -44,5 +44,13 @@ SOLUTION
 INSERT INTO make (name) VALUES ('Nissan');
 INSERT INTO make (name) VALUES ('Peugeot');
 
+INSERT INTO model (name, make_id) VALUES ('Pathfinder Armada 4WD', 1);
+INSERT INTO model (name, make_id) VALUES ('Pathfinder FE 2WD', 1);
+INSERT INTO model (name, make_id) VALUES ('Pathfinder Hybrid 2WD', 1);
+INSERT INTO model (name, make_id) VALUES ('505', 2);
+INSERT INTO model (name, make_id) VALUES ('505 Sedan', 2);
+
+
+
 
 
