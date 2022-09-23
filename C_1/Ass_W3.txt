@@ -41,3 +41,8 @@ SELECT make.name, model.name
 
 SOLUTION
 
+INSERT INTO make (name) VALUES ('Nissan');
+INSERT INTO make (name) VALUES ('Peugeot');
+
+
+
