@@ -1,0 +1,43 @@
+QUES 
+
+Here is the structure of the tables you will need for this assignment:
+
+CREATE TABLE make (
+    id SERIAL,
+    name VARCHAR(128) UNIQUE,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE model (
+  id SERIAL,
+  name VARCHAR(128),
+  make_id INTEGER REFERENCES make(id) ON DELETE CASCADE,
+  PRIMARY KEY(id)
+);
+
+----------------------------------------------------------
+DATA 
+
+Insert the following data into your database separating it appropriately into the make and model tables and setting the make_id foreign key to link each model to its corresponding make.
+
+make	model
+Nissan	Pathfinder Armada 4WD
+Nissan	Pathfinder FE 2WD
+Nissan	Pathfinder Hybrid 2WD
+Peugeot	505
+Peugeot	505 Sedan
+
+----------------------------------------------------------
+CHECK
+
+To grade this assignment, the program will run a query like this on your database and look for the data above:
+
+SELECT make.name, model.name
+    FROM model
+    JOIN make ON model.make_id = make.id
+    ORDER BY make.name LIMIT 5;
+
+----------------------------------------------------------
+
+SOLUTION
+
