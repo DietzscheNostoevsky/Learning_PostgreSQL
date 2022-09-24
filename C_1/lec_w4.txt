@@ -44,3 +44,9 @@ SELECT student.name, member.role, course.title
   JOIN member ON member.student_id = student.id 
   JOIN course ON member.course_id = course.id
   ORDER BY course.title, member.role DESC, student.name;
+
+--------------------------------------------------
+
+Self code
+
+Lets create a table for the role , 0 means student, 1 means instructor 
