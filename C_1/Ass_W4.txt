@@ -65,10 +65,13 @@ Data normalize
 Instructor - 1
 Learner - 0 
 
+Course Data 
+
 si106  1
 si110  2
 si206  3
 
+Roster Data 
 
 Eadie, 1, 1
 Cinar, 1, 0
@@ -85,4 +88,53 @@ Kelsey, 3, 0
 Lauren, 3, 0
 Tanya, 3, 0
 Tru, 3, 0
+
+Student Data 
+
+
+______________________________
+
+Data insert
+
+INSERT INTO student (name) VALUES ('Eadie');
+INSERT INTO student (name) VALUES ('Cinar');
+INSERT INTO student (name) VALUES ('Dregan');
+INSERT INTO student (name) VALUES ('Haris');
+INSERT INTO student (name) VALUES ('Sky');
+INSERT INTO student (name) VALUES ('Katelin');
+INSERT INTO student (name) VALUES ('Eliza');
+INSERT INTO student (name) VALUES ('Gavin');
+INSERT INTO student (name) VALUES ('Hania');
+INSERT INTO student (name) VALUES ('Kerris');
+INSERT INTO student (name) VALUES ('Damon');
+INSERT INTO student (name) VALUES ('Kelsey');
+INSERT INTO student (name) VALUES ('Lauren');
+INSERT INTO student (name) VALUES ('Tanya');
+INSERT INTO student (name) VALUES ('Tru');
+
+INSERT INTO course (title) VALUES ('si106');
+INSERT INTO course (title) VALUES ('si110');
+INSERT INTO course (title) VALUES ('si206');
+
+
+
+INSERT INTO roster (student_id, course_id, role) VALUES (1, 1, 1);
+INSERT INTO roster (student_id, course_id, role) VALUES (2, 1, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (3, 1, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (4, 1, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (5, 1, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (6, 2, 1);
+INSERT INTO roster (student_id, course_id, role) VALUES (7, 2, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (8, 2, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (9, 2, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (10, 2, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (11, 3, 1);
+INSERT INTO roster (student_id, course_id, role) VALUES (12, 3, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (13, 3, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (14, 3, 0);
+INSERT INTO roster (student_id, course_id, role) VALUES (15, 3, 0);
+
+
+
+
 
