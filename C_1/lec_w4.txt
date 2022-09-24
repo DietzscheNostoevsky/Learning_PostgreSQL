@@ -52,7 +52,7 @@ Self code
 Lets create a table for the role , 0 means student, 1 means instructor 
 
 CREATE TABLE role (
-  id ,
+  id SMALLINT ,
   roles VARCHAR(128) UNIQUE,
   PRIMARY KEY(id)
 ) ;
