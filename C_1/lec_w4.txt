@@ -56,3 +56,6 @@ CREATE TABLE role (
   roles VARCHAR(128) UNIQUE,
   PRIMARY KEY(id)
 ) ;
+
+INSERT INTO role (id, roles) VALUES (0 , 'Student');
+INSERT INTO role (id, roles) VALUES (1 , 'Instructor');
