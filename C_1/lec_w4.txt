@@ -57,5 +57,34 @@ CREATE TABLE role (
   PRIMARY KEY(id)
 ) ;
 
+CREATE TABLE member (
+    student_id INTEGER REFERENCES student(id) ON DELETE CASCADE,
+    course_id INTEGER REFERENCES course(id) ON DELETE CASCADE,
+	role_id INTEGER REFERENCES role(id),
+    PRIMARY KEY (student_id, course_id)
+) ;
+
+
 INSERT INTO role (id, roles) VALUES (0 , 'Student');
 INSERT INTO role (id, roles) VALUES (1 , 'Instructor');
+
+INSERT INTO member (student_id, course_id, role_id) VALUES (1, 1, 1);
+INSERT INTO member (student_id, course_id, role_id) VALUES (2, 1, 0);
+INSERT INTO member (student_id, course_id, role_id) VALUES (3, 1, 0);
+
+INSERT INTO member (student_id, course_id, role_id) VALUES (1, 2, 0);
+INSERT INTO member (student_id, course_id, role_id) VALUES (2, 2, 1);
+
+INSERT INTO member (student_id, course_id, role_id) VALUES (2, 3, 1);
+INSERT INTO member (student_id, course_id, role_id) VALUES (3, 3, 0);
+
+Build Query 
+
+
+SELECT student.name,  course.title , role.roles
+  FROM student 
+  JOIN member ON member.student_id = student.id 
+  JOIN course ON member.course_id = course.id
+  JOIN role ON member.role_id = role.id 
+
+  ORDER BY course.title, member.role_id DESC, student.name;
