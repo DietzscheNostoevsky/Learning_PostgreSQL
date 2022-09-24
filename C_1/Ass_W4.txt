@@ -46,5 +46,16 @@ Tanya, si206, Learner
 Tru, si206, Learner
 
 -------------------------------------------------------
+Test 
+
+You can test to see if your data has been entered properly with the following SQL statement.
+
+SELECT student.name, course.title, roster.role
+    FROM student 
+    JOIN roster ON student.id = roster.student_id
+    JOIN course ON roster.course_id = course.id
+    ORDER BY course.title, roster.role DESC, student.name;
+
+-------------------------------------------------------
 
 
