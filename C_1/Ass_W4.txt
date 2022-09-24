@@ -2,6 +2,7 @@ Ques :
 
 Create the following tables.
 
+DROP TABLE student CASCADE;
 CREATE TABLE student (
     id SERIAL,
     name VARCHAR(128) UNIQUE,
@@ -57,5 +58,7 @@ SELECT student.name, course.title, roster.role
     ORDER BY course.title, roster.role DESC, student.name;
 
 -------------------------------------------------------
+Solution 
+
 
 
