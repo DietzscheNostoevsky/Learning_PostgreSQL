@@ -88,3 +88,16 @@ SELECT student.name,  course.title , role.roles
   JOIN role ON member.role_id = role.id 
 
   ORDER BY course.title, member.role_id DESC, student.name;
+
+Out : 
+
+ name | title  |   roles    
+------+--------+------------
+ Ed   | PHP    | Instructor
+ Sue  | PHP    | Student
+ Jane | Python | Instructor
+ Ed   | Python | Student
+ Sue  | Python | Student
+ Ed   | SQL    | Instructor
+ Jane | SQL    | Student
+(7 rows)
