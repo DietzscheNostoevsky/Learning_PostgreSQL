@@ -60,5 +60,29 @@ SELECT student.name, course.title, roster.role
 -------------------------------------------------------
 Solution 
 
+Data normalize
 
+Instructor - 1
+Learner - 0 
+
+si106  1
+si110  2
+si206  3
+
+
+Eadie, 1, 1
+Cinar, 1, 0
+Dregan, 1, 0
+Haris, 1, 0
+Sky, 1, 0
+Katelin, 2, 1
+Eliza, 2, 0
+Gavin, 2, 0
+Hania, 2, 0
+Kerris, 2, 0
+Damon, 3, 1
+Kelsey, 3, 0
+Lauren, 3, 0
+Tanya, 3, 0
+Tru, 3, 0
 
