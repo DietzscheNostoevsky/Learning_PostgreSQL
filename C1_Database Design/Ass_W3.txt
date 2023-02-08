@@ -50,6 +50,8 @@ INSERT INTO model (name, make_id) VALUES ('Pathfinder Hybrid 2WD', 1);
 INSERT INTO model (name, make_id) VALUES ('505', 2);
 INSERT INTO model (name, make_id) VALUES ('505 Sedan', 2);
 
+review
+
 
 
 
