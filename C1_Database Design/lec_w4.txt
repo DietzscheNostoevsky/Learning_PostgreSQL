@@ -101,3 +101,6 @@ Out :
  Ed   | SQL    | Instructor
  Jane | SQL    | Student
 (7 rows)
+
+
+review
