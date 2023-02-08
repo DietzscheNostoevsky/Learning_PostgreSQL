@@ -13,3 +13,6 @@ CREATE TABLE automagic (
   name CHAR(32) NOT NULL, 
   height REAL NOT NULL
 );
+
+
+review
